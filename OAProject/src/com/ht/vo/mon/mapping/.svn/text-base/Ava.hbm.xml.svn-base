@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+    收费管理表
+-->
+<hibernate-mapping>
+    <class name="com.ht.vo.mon.Ava" table="AVA" schema="SCOTT">
+        <id name="aid" type="java.lang.Integer">
+            <column name="AID" precision="4" scale="0" />
+            <generator class="sequence">
+            	<param name="sequence">avg_id</param>
+            </generator>
+        </id>
+        <property name="sname" type="java.lang.String">
+        </property>
+        <property name="ename" type="java.lang.String">
+        </property>
+        <property name="avafrom" type="java.lang.Integer">
+        </property>
+        <property name="avamon" type="java.lang.Double"></property>
+        <property name="term" type="java.lang.Integer"></property>
+        <property name="classname" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

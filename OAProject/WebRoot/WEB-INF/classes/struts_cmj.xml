@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="CMJ"  extends="json-default">
+		<!-- 部门 -->
+		<action name="dept" class="com.ht.action.dept.DeptAction">
+		    <result type="json"></result>
+		    <result name="toadd">/dept/deptadd.jsp</result>
+			<result name="toright">/right.jsp</result>
+			<result name="todeptupd">/dept/deptupd.jsp</result>
+		</action>
+		<!-- 员工 -->
+		<action name="emp" class="com.ht.action.dept.EmpAction">
+			<result name="toemplist">/dept/emplist.jsp</result>
+			<result name="toempinfo">/dept/empinfo.jsp</result>
+			<result name="toupd">/dept/empinfoupd.jsp</result>
+			<result name="toupd2">/dept/empinfoupd2.jsp</result>
+			<result name="tomain">/default.jsp</result>
+		</action>
+		<!-- 日志 -->
+		<action name="report" class="com.ht.action.dept.ReportAction">
+			<result type="json"></result>
+		    <result name="toadd">/dept/reportlist.jsp</result>
+		    <result name="toselreportlist">/dept/selreportlist.jsp</result>
+			<result name="toreportadd">/dept/reportadd.jsp</result>
+			<result name="toreportlist">/dept/reportlist.jsp</result>
+			<result name="toreportupd">/dept/reportupd.jsp</result>
+			<result name="tolist">/dept/selreportlist.jsp</result>
+		</action>
+		<!-- 考勤Excel导入 -->
+		<action name="kaoqin" class="com.ht.action.dept.KqExcelAction">
+			<result name="tolist">/dept/kaoqinlist.jsp</result>
+			<result name="toalllist">/dept/allkaoqinlist.jsp</result>
+		</action>
+		<!-- 考勤 -->
+		<action name="wcheck" class="com.ht.action.dept.WorkCheckAction">
+			<result type="json"></result>
+			<result name="tochecklist">/dept/wchecklist.jsp</result>
+		</action>
+		
+		<!-- 考勤异议 -->
+		<action name="wcheckdesc" class="com.ht.action.dept.WcheckDescsAction">
+			<result type="json"></result>
+			<result name="tolist">/dept/wcheckdesclist.jsp</result>
+			<result name="toupd">/dept/wcheckdescupd2.jsp</result>
+			<result name="toadd">/dept/wcheckdescadd.jsp</result>
+			<result name="toshlist">/dept/shwcheckdesclist.jsp</result>
+			<result name="toshlist1">/dept/shwcheckdesclist1.jsp</result>
+			<result name="toshlist2">/dept/shwcheckdesclist2.jsp</result>
+			<result name="toshlist3">/dept/shwcheckdesclist3.jsp</result>
+			<result name="toshlist4">/dept/shwcheckdesclist4.jsp</result>
+		</action>
+		
+		<!-- 请休假 -->
+		<action name="leave" class="com.ht.action.dept.LeaveAction">
+			<result name="tolist">/dept/leavelist.jsp</result>
+			<result name="toupd">/dept/leaveupd.jsp</result>
+			<result name="toleave">/dept/leave.jsp</result>
+			<result name="toshleave">/dept/shleave.jsp</result>
+			<result name="tosellist">/dept/shleavelist.jsp</result>
+		</action>
+		
+		<!-- 加班管理 -->
+		<action name="overtime" class="com.ht.action.dept.OverTimeAction">
+			<result name="tolist">/dept/overtimelist.jsp</result>
+			<result name="toovertime">/dept/overtime.jsp</result>
+			<result name="toupd">/dept/overtimeupd.jsp</result>
+			<result name="toshlist">/dept/shovertimelist.jsp</result>
+			<result type="json"></result>
+		</action>
+		
+		<!-- 值班管理 -->
+		<action name="duty" class="com.ht.action.dept.DutyAction">
+			<result name="toaddjsp">/dept/duty.jsp</result>
+			<result name="tolist">/dept/dutylist.jsp</result>
+			<result name="toupd">/dept/dutyupd.jsp</result>
+			<result name="tosellist">/dept/seldutylist.jsp</result>
+		</action>
+		<!-- 班级巡查 -->
+		<action name="patrol" class="com.ht.action.dept.PatrolClassAction">
+			<result name="tosellist">/dept/selpatrolclasslist.jsp</result>
+			<result name="toaddjsp">/dept/patrolclass.jsp</result>
+			<result name="tolist">/dept/patrolclasslist.jsp</result>
+			<result name="toupd">/dept/patrolclassupd.jsp</result>
+			<result type="json"></result>
+		</action>
+		<!-- 宿舍巡查 -->
+		<action name="patrolshuse" class="com.ht.action.dept.PatrolSheseAction">
+			<result type="json"></result>
+			<result name="tojsp">/dept/patrolshuse.jsp</result>
+			<result name="tolist">/dept/patrolshuselist.jsp</result>
+			<result name="toupd">/dept/patrolshuseupd.jsp</result>
+			<result name="tosellist">/dept/selpatrolshuselist.jsp</result>
+		</action>
+		<!-- 值班安排 -->
+		<action name="wdoing" class="com.ht.action.dept.WorkDoingAction">
+			<result type="json"></result>
+			<result name="tojsp">/dept/workdoingadd.jsp</result>
+			<result name="tolist">/dept/workdoinglist.jsp</result>
+			<result name="totellist">/dept/workdoing.jsp</result>
+			<result name="toupd">/dept/workdoingupd.jsp</result>
+		</action>
+		<!-- 权限设置 -->
+		<action name="limit" class="com.ht.action.dept.LimitAction">
+			<result name="tolist">/dept/limitlist.jsp</result>
+			<result name="toupd">/dept/limit.jsp</result>
+			<result name="tomain" type="redirect">/main.jsp</result>
+		</action>
+	</package>
+</struts>

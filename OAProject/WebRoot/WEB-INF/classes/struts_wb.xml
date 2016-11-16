@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 默认命名空间   -->
+	<package name="WB"  extends="json-default">
+		<action name="edu*" class="com.ht.action.edu.eduaction" method="{1}">
+			<result type="json"></result>
+			<result name="toobject">/imglist1.jsp</result>
+			<result name="todbacke">/wu/dbacke.jsp</result>
+			<result name="tofacu">/wu/faculymff.jsp</result>
+			<result name="todefault">/default.jsp</result>
+			<result name="toimglist">/imglist.jsp</result>
+			<result name="todbackeadd">/wu/dbackeadd.jsp</result>
+			<result name="faculymfflist">/wu/faculymfflist.jsp</result>
+			<result name="tofaculymfflist">/wu/tofaculymfftolist.jsp</result>
+		</action>
+		<action name="tra*" class="com.ht.action.edu.traaction" method="{1}">
+			<result name="totra">/wu/tra.jsp</result>
+			<result name="todefault">/default.jsp</result>
+			<result name="totralist">/wu/tralist.jsp</result>
+			<result name="totradetails">/wu/tradetails.jsp</result>
+		</action>
+		<action name="objectimg*" class="com.ht.action.edu.objectimgaction" method="{1}">
+			<result name="toobjectimg">/wu/objectimg.jsp</result>
+				<result name="toobjectimgadd">/wu/objectimgadd.jsp</result>
+				<result name="toobjectupd">/wu/objectupd.jsp</result>
+				<result name="toobjectimglist">/wu/objectimglist.jsp</result>
+		</action>
+		<action name="mon*" class="com.ht.action.mon.avaaction" method="{1}">
+			<result name="toavalist">/wu/avalist.jsp</result>
+			<result name="toavaadd">/wu/avaadd.jsp</result>
+			<result name="tomonlist">/wu/monlist.jsp</result>
+			<result name="tomonadd">/wu/monadd.jsp</result>
+			<result name="tocomputer">/wu/computerlist.jsp</result>
+			<result name="tocomputeradd">/wu/conputeradd.jsp</result>
+			<result name="tocomputerupd">/wu/conputerupd.jsp</result>
+			<result name="topaylist">/wu/paylist.jsp</result>
+			<result name="topayadd">/wu/payadd.jsp</result>
+			<result name="topayslist">/wu/payslist.jsp</result>
+			<result name="topaysadd">/wu/paysadd.jsp</result>
+			<result name="topaysupd">/wu/paysupd.jsp</result>
+			<result name="togetpays">/wu/getavalist.jsp</result>
+			<result name="togetpaysupd">/wu/getavaupd.jsp</result>
+		</action>
+		<action name="main*" class="com.ht.action.mainaction" method="{1}">
+			<result type="json"></result>
+		</action>
+	</package>
+</struts>

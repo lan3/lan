@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept
+END
+EmpService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/EmpService.java
+END
+WCheckDescService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/WCheckDescService.java
+END
+WorkDoingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/WorkDoingService.java
+END
+WCheckService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/yfb3/!svn/ver/88/OAProject/src/com/ht/service/dept/WCheckService.java
+END
+DutyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/DutyService.java
+END
+PatrolClassService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/yfb3/!svn/ver/110/OAProject/src/com/ht/service/dept/PatrolClassService.java
+END
+PatrolShuseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/yfb3/!svn/ver/118/OAProject/src/com/ht/service/dept/PatrolShuseService.java
+END
+OverTimeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/OverTimeService.java
+END
+ReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/ReportService.java
+END
+DeptService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/yfb3/!svn/ver/230/OAProject/src/com/ht/service/dept/DeptService.java
+END
+LeaveService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/yfb3/!svn/ver/259/OAProject/src/com/ht/service/dept/LeaveService.java
+END

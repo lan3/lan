@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+   收入管理表
+-->
+<hibernate-mapping>
+    <class name="com.ht.vo.mon.Mon" table="MON" schema="SCOTT">
+        <id name="monid" type="java.lang.Integer">
+            <column name="MONID" precision="4" scale="0" />
+            <generator class="sequence">
+            	<param name="sequence">mon_id</param>
+            </generator>
+        </id>
+        <property name="moncount" type="java.lang.Double">
+            <column name="MONCOUNT" precision="4" scale="1" />
+        </property>
+        <property name="monpro" type="java.lang.Integer">
+            <column name="MONPRO" length="100" />
+        </property>
+        <property name="sname" type="java.lang.String"></property>
+        <property name="monremark" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>

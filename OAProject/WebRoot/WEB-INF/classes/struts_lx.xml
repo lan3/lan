@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 默认命名空间   -->
+	<package name="LX"  extends="json-default">
+		<action name="msg*" class="com.ht.action.msg.MsgAction" method="{1}">
+			<result type="json"></result>
+			<result name="to_msg">/tablist.jsp</result>
+			<result name="to_upd">/tabupd.jsp</result>
+			<result name="to_sel">/tabsel.jsp</result>
+			<result name="to_s">/tablists.jsp</result>
+		</action>
+
+		<action name="ss*" class="com.ht.action.msg.SugAction" method="{1}">
+			<result type="json"></result>
+			<result name="to_sug">/tablists.jsp</result>
+		</action>
+	</package>
+	
+</struts>

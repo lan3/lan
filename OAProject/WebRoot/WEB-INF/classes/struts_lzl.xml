@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 默认命名空间   -->
+	<package name="LZL"  extends="json-default">
+	
+		<action name="hour" class="com.ht.action.stu.hourseAction">
+			<result type="json"></result>
+			<result name="to_list">listhourse.jsp</result>
+			<result name="to_upd">stu/updhourse.jsp</result>
+		</action>
+		
+		<action name="login" class="com.ht.action.stu.LoginAction">
+			<result name="to_list">/nick.jsp</result>
+			<result name="to_login" type="redirect">/login.jsp</result>
+			<result name="to_main">/main.jsp</result>
+		</action>
+		
+		<action name="class" class="com.ht.action.stu.classesAction">
+			<result name="to_add">/addclass.jsp</result>
+			<result name="to_classes">/classes.jsp</result>
+			<result name="to_update">stu/updateclass.jsp</result>
+		</action>
+		
+		<action name="stu" class="com.ht.action.stu.StudentAction">
+			<result name="to_addstu">addstu.jsp</result>
+			<result name="to_list">stulist.jsp</result>
+			<result name="to_upd">stu/updstu.jsp</result>
+			<result name="to_querystu">stuquery.jsp</result>
+		</action>
+		
+		<action name="say" class="com.ht.action.stu.SaysAction">
+			<result name="to_addsays">sayadd.jsp</result>
+			<result name="to_list">says.jsp</result>
+			<result name="to_upd">sayupd.jsp</result>
+		</action>
+		
+		<action name="score" class="com.ht.action.stu.scoreAction">
+			<result name="to_score">addscore.jsp</result>
+			<result name="to_list">score.jsp</result>
+			<result name="to_stu">stufind.jsp</result>
+			<result name="to_obj">objlist.jsp</result>
+			<result name="to_stuclass">stuclass.jsp</result>
+		</action>
+		
+		<action name="num" class="com.ht.action.stu.StunumAtion">
+			<result name="to_list">numlist.jsp</result>
+			<result name="to_add">addsnum.jsp</result>
+			<result name="to_upd">numupd.jsp</result>
+			<result name="to_numclass">numclass.jsp</result>
+			<result name="to_like">numlike.jsp</result>
+		</action>
+		
+		<action name="job" class="com.ht.action.stu.JobAction">
+			<result name="to_add">addjob.jsp</result>
+			<result name="to_list">joblist.jsp</result>
+			<result name="to_like">like.jsp</result>
+		</action>
+		<!-- 项目答辩 -->
+		<action name="web" class="com.ht.action.stu.WebAction">
+			<result name="to_add">webadd.jsp</result>
+			<result name="to_list">web.jsp</result>
+			<result name="to_web">weblist.jsp</result>
+			<result name="to_stu">likestu.jsp</result>
+		</action>
+		<!-- 备用电脑领用 -->
+		<action name="com" class="com.ht.action.stu.ComAction">
+			<result name="to_add">comadd.jsp</result>
+			<result name="to_teach">Comteach.jsp</result>
+			<result name="to_sp">Comsp.jsp</result>
+			<result name="to_teaches">Comteaches.jsp</result>
+			<result name="to_dept">Comdept.jsp</result>
+			<result name="to_mycom">Computes.jsp</result>
+		</action>
+		<!-- 学生请假 -->
+		<action name="leve" class="com.ht.action.stu.StuleveAction">
+			<result name="to_add">addleave.jsp</result>
+			<result name="to_list">levelist.jsp</result>
+			<result name="to_teach">teach.jsp</result>
+			<result name="to_teaches">teachesleve.jsp</result>
+			<result name="to_dept">deptleve.jsp</result>
+			<result name="to_del" type="redirect">levelist.jsp</result>
+			<result name="to_mylist">myleve.jsp</result>
+			<result name="to_myleve">myleve.jsp</result>
+		</action>
+		<!-- 学生反馈 -->
+		<action name="view" class="com.ht.action.stu.ViewAction">
+			<result name="to_add">addview.jsp</result>
+			<result name="to_main">default.jsp</result>
+			<result name="to_viewlist">viewlist.jsp</result>
+			<result name="to_viewstu">viewstu.jsp</result>
+			<result name="to_stuview">viewlook.jsp</result>
+			<result name="to_viewcont">viewlook.jsp</result>
+			<result name="to_viewstucont">viewlook.jsp</result>
+		</action>
+		<!-- 回复学生反馈信息 -->
+		<action name="vte" class="com.ht.action.stu.ViewteachAction">
+			<result name="to_cont">viewcont.jsp</result>
+			<result name="to_viewstucont">viewcont.jsp</result>
+		</action>
+	</package>
+</struts>

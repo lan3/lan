@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 默认命名空间   -->
+	<package name="FJ"  extends="struts-default">
+		<action name="inten"  class="com.ht.action.inten.IntenAction" >
+				<result  name="tolist" >/inten/inten.jsp</result>
+				<result  name="tolist1" >/inten/inten.jsp</result>
+				<result name="toupd" >/inten/updinte.jsp</result>
+				<result name="add" >/inten/addinte.jsp</result>
+		</action>
+		<action name="add"  class="com.ht.action.inten.IntenAction"></action>
+		
+		<!-- 登入验证 -->
+		<action name="login"  class="com.ht.login.Action.LoginAction">
+		<result  name="succeed" type="redirect">/main.jsp</result>
+		<result  name="erro"  >/login.jsp</result>
+		<result  name="student"  type="redirect">/msg.jsp</result>
+		</action>
+		<!--  登入之后-->
+		<action  name="loginafter" class="com.ht.login.Action.LoginAfterAction">
+				<result  name="removesession">/main.jsp</result>
+				<result name="to_log"  type="redirect">/default.jsp </result>
+				<result name="toback">/stu/updpwd.jsp</result>
+				<result name="to_log1"  type="redirect">/mdefault.jsp  </result>
+				<result name="toback1">/stu/updpwd1.jsp</result>
+				<result  name="login"  >/login.jsp</result>
+				<!-- <result  name="emptop">/top.jsp</result> -->
+		</action>
+	</package>
+</struts>
